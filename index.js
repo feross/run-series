@@ -1,20 +1,17 @@
-module.exports = function (tasks, cb) {
+module.exports = series
+module.exports.waterfall = waterfall
+
+function series (tasks, cb) {
   var current = 0
   var results = []
+  cb = cb || function () {}
 
   function done (err, result) {
-    if (err) {
-      cb && cb(err, results)
-      cb = null
-      return
-    }
-
+    if (err) return cb(err, results)
     results.push(result)
-    current += 1
 
-    if (current >= tasks.length) {
-      cb && cb(null, results)
-      cb = null
+    if (++current >= tasks.length) {
+      cb(null, results)
     } else {
       tasks[current](done)
     }
@@ -23,7 +20,29 @@ module.exports = function (tasks, cb) {
   if (tasks.length) {
     tasks[current](done)
   } else {
-    cb && cb(null, [])
-    cb = null
+    cb(null, [])
   }
 }
+
+function waterfall (tasks, cb) {
+  var current = 0
+  cb = cb || function () {}
+
+  function done (err) {
+    var args = Array.prototype.slice.call(arguments, 1)
+    if (err) return cb(err, args)
+
+    if (++current >= tasks.length) {
+      cb.apply(undefined, [null].concat(args))
+    } else {
+      tasks[current].apply(undefined, args.concat(done))
+    }
+  }
+
+  if (tasks.length) {
+    tasks[current](done)
+  } else {
+    cb(null, [])
+  }
+}
+
