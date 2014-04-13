@@ -18,7 +18,7 @@ function series (tasks, cb) {
   }
 
   if (tasks.length) {
-    tasks[current](done)
+    tasks[0](done)
   } else {
     cb(null, [])
   }
@@ -40,7 +40,7 @@ function waterfall (tasks, cb) {
   }
 
   if (tasks.length) {
-    tasks[current](done)
+    tasks[0](done)
   } else {
     cb(null, [])
   }
