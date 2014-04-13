@@ -16,7 +16,7 @@ npm install run-series
 
 Run the functions in the `tasks` array in series, each one running once the previous
 function has completed. If any functions in the series pass an error to its callback, no
-more functions are run, and 1callback1 is immediately called with the value of the error.
+more functions are run, and `callback` is immediately called with the value of the error.
 Otherwise, `callback` receives an array of results when `tasks` have completed.
 
 ##### arguments
