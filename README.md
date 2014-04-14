@@ -1,4 +1,4 @@
-# run-series [![travis](https://img.shields.io/travis/feross/run-series.svg)](https://travis-ci.org/feross/run-series) [![npm](https://img.shields.io/npm/v/run-series.svg)](https://npmjs.org/package/run-series) [![gittip](https://img.shields.io/gittip/feross.svg)](https://www.gittip.com/feross/)
+# run-series [![travis](https://img.shields.io/travis/feross/run-series.svg)](https://travis-ci.org/feross/run-series) [![npm](https://img.shields.io/npm/v/run-series.svg)](https://npmjs.org/package/run-series)
 
 ### Run an array of functions in series
 
