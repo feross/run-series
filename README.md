@@ -51,8 +51,8 @@ function (err, results) {
 
 #### series.waterfall(tasks, [callback])
 
-Runs the `tasks` array of functions in series, each passing their results to the next in
-the array. However, if any of the `tasks` pass an error to their own callback, the next
+Runs the `tasks` array of functions in series, **each passing their results to the next in
+the array**. However, if any of the `tasks` pass an error to their own callback, the next
 function is not executed, and the main `callback` is immediately called with the error.
 
 ##### arguments
