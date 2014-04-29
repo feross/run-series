@@ -1,7 +1,4 @@
-module.exports = series
-module.exports.waterfall = require('./waterfall')
-
-function series (tasks, cb) {
+module.exports = function (tasks, cb) {
   var current = 0
   var results = []
   cb = cb || function () {}

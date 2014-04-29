@@ -1,4 +1,4 @@
-module.exports = function waterfall (tasks, cb) {
+module.exports = function (tasks, cb) {
   var current = 0
   cb = cb || function () {}
 

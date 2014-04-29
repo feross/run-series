@@ -1,6 +1,11 @@
 var series = require('../')
 var test = require('tape')
 
+test('require(run-series/series) usage', function (t) {
+  t.equal(series, require('../series'))
+  t.end()
+})
+
 test('functions run in series', function (t) {
   t.plan(4)
 
