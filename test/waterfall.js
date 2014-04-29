@@ -1,5 +1,11 @@
 var series = require('../')
+var waterfall = require('../waterfall')
 var test = require('tape')
+
+test('require(run-series/waterfall) usage', function (t) {
+  t.equal(waterfall, series.waterfall)
+  t.end()
+})
 
 test('waterfall: functions pass results to next function', function (t) {
   t.plan(8)
