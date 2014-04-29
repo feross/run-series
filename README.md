@@ -57,6 +57,11 @@ bundle size.
 
 Works great in the browser with [browserify](http://browserify.org/)!
 
-## license
+### see also
+
+- [run-waterfall](https://github.com/feross/run-waterfall)
+- [run-parallel](https://github.com/feross/run-parallel)
+
+### license
 
 MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
