@@ -10,7 +10,11 @@ module.exports = function (tasks, cb) {
     if (++current >= tasks.length) {
       cb(null, results)
     } else {
-      tasks[current](done)
+      if (typeof tasks[current] == 'function') {
+        tasks[current](done)
+      } else {
+        done(null, tasks[current])
+      }
     }
   }
 
