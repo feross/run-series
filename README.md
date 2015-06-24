@@ -1,8 +1,15 @@
-# run-series [![travis](https://img.shields.io/travis/feross/run-series.svg)](https://travis-ci.org/feross/run-series) [![npm](https://img.shields.io/npm/v/run-series.svg)](https://npmjs.org/package/run-series) [![npm](https://img.shields.io/npm/dm/run-series.svg)](https://npmjs.org/package/run-series)
+# run-series [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
+
+[travis-image]: https://img.shields.io/travis/feross/run-series.svg?style=flat
+[travis-url]: https://travis-ci.org/feross/run-series
+[npm-image]: https://img.shields.io/npm/v/run-series.svg?style=flat
+[npm-url]: https://npmjs.org/package/run-series
+[downloads-image]: https://img.shields.io/npm/dm/run-series.svg?style=flat
+[downloads-url]: https://npmjs.org/package/run-series
 
 ### Run an array of functions in series
 
-![series](https://raw.githubusercontent.com/feross/run-series/master/img.png) [![browser support](https://ci.testling.com/feross/run-series.png)](https://ci.testling.com/feross/run-series)
+![series](https://raw.githubusercontent.com/feross/run-series/master/img.png) [![Sauce Test Status](https://saucelabs.com/browser-matrix/run-series.svg)](https://saucelabs.com/u/run-series)
 
 ### install
 
