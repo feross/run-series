@@ -14,8 +14,8 @@
     "dezalgo": "^1.0.1"
   },
   "devDependencies": {
-    "standard": "^3.2.0",
     "tape": "^4.0.0"
+    "standard": "^4.3.2",
   },
   "homepage": "https://github.com/feross/run-series",
   "keywords": [
