@@ -3,7 +3,7 @@ module.exports = function (tasks, cb) {
   var results = []
   var isSync = true
 
-  function done (err, results) {
+  function done (err) {
     function end () {
       if (cb) cb(err, results)
     }
@@ -13,12 +13,12 @@ module.exports = function (tasks, cb) {
 
   function each (err, result) {
     results.push(result)
-    if (++current >= tasks.length || err) done(err, results)
+    if (++current >= tasks.length || err) done(err)
     else tasks[current](each)
   }
 
   if (tasks.length > 0) tasks[0](each)
-  else done(null, results)
+  else done(null)
 
   isSync = false
 }
