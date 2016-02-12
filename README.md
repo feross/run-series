@@ -1,10 +1,10 @@
 # run-series [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
 
-[travis-image]: https://img.shields.io/travis/feross/run-series.svg?style=flat
+[travis-image]: https://img.shields.io/travis/feross/run-series/master.svg
 [travis-url]: https://travis-ci.org/feross/run-series
-[npm-image]: https://img.shields.io/npm/v/run-series.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/run-series.svg
 [npm-url]: https://npmjs.org/package/run-series
-[downloads-image]: https://img.shields.io/npm/dm/run-series.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/run-series.svg
 [downloads-url]: https://npmjs.org/package/run-series
 
 ### Run an array of functions in series
