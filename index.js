@@ -1,4 +1,6 @@
-module.exports = function (tasks, cb) {
+module.exports = runSeries
+
+function runSeries (tasks, cb) {
   var current = 0
   var results = []
   var isSync = true
