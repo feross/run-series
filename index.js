@@ -1,3 +1,4 @@
+/*! run-series. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 module.exports = runSeries
 
 function runSeries (tasks, cb) {
