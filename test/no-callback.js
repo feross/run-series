@@ -1,10 +1,10 @@
-var series = require('../')
-var test = require('tape')
+const series = require('../')
+const test = require('tape')
 
 test('no callback', function (t) {
   t.plan(2)
 
-  var tasks = [
+  const tasks = [
     function (cb) {
       t.pass('cb 1')
       cb(null)

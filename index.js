@@ -2,9 +2,9 @@
 module.exports = runSeries
 
 function runSeries (tasks, cb) {
-  var current = 0
-  var results = []
-  var isSync = true
+  let current = 0
+  const results = []
+  let isSync = true
 
   function done (err) {
     function end () {
